@@ -1,0 +1,83 @@
+body {
+	text-align: center;
+}
+
+#camera-denied {
+  display: none;
+}
+
+.title {
+	font-family: 'Press Start 2P', cursive;
+	font-size: 75px;
+}
+
+.container {
+	width: 600px;
+	margin: auto;
+}
+
+#video-container {
+	position: relative;
+}
+
+#overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: rotateY(180deg);
+}
+
+video {
+	width: 100%;
+	transform: rotateY(180deg);
+}
+
+.filter-buttons {
+	margin: auto 5%;
+	width: 100%;
+}
+
+.filter-buttons div {
+  position: relative;
+	width: 26%;
+	padding-bottom:25%;
+	float: left;
+	margin-bottom: 10px;
+	border-radius: 100%;
+	cursor: pointer;
+}
+
+.filter-buttons div:nth-child(2), .filter-buttons div:nth-child(5), .filter-buttons div:nth-child(8) {
+	margin-right: 6%;
+	margin-left: 6%;
+}
+
+.filter-buttons div img {
+  position:absolute;
+	top: 15%;
+  left: 12%;
+  width: 65%;
+	margin: auto;
+	transform: rotateY(180deg);
+}
+
+
+@media (max-width: 600px){
+ .container {
+    width: 90%;
+}
+
+.filter-buttons {
+	margin: auto;
+}
+
+.filter-buttons div {
+  	position:relative;
+	width: 19%;
+	padding-bottom:19%;
+}
+.filter-buttons div:nth-child(2), .filter-buttons div:nth-child(5), .filter-buttons div:nth-child(8) {
+	margin-right: auto;
+	margin-left: auto;
+}
+}

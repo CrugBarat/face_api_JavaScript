@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://apis.google.com/js/platform.js"></script>
+	<script type="text/javascript" src="face-api.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+	<title>FACE API</title>
+</head>
+<body>
+	<div class="container">
+		<h1 class="title">FACE API</h1>
+		<div id="video-container">
+			<video id="live-stream" autoplay playsinline></video>
+			<div id="camera-denied">Access to your camera was denied</div>
+			<canvas id="overlay"></canvas>
+		</div>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
